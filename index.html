@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arithmetic Calculator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="calculator-shell" role="application" aria-label="Arithmetic Calculator">
+    <header class="calculator-header">
+      <h1>Arithmetic Calculator</h1>
+      <p class="subtitle">Clean UI with keyboard access</p>
+    </header>
+
+    <section class="display-panel" aria-live="polite">
+      <div id="expression" class="expression" aria-label="Current expression">0</div>
+      <div id="result" class="result" aria-label="Calculation result">0</div>
+    </section>
+
+    <section class="keypad" role="grid">
+      <button class="key key--wide secondary" data-action="clear" aria-label="Clear all">AC</button>
+      <button class="key secondary" data-action="delete" aria-label="Delete last character">DEL</button>
+      <button class="key operator" data-value="/" aria-label="Divide">÷</button>
+
+      <button class="key" data-value="7">7</button>
+      <button class="key" data-value="8">8</button>
+      <button class="key" data-value="9">9</button>
+      <button class="key operator" data-value="*" aria-label="Multiply">×</button>
+
+      <button class="key" data-value="4">4</button>
+      <button class="key" data-value="5">5</button>
+      <button class="key" data-value="6">6</button>
+      <button class="key operator" data-value="-" aria-label="Subtract">−</button>
+
+      <button class="key" data-value="1">1</button>
+      <button class="key" data-value="2">2</button>
+      <button class="key" data-value="3">3</button>
+      <button class="key operator" data-value="+" aria-label="Add">+</button>
+
+      <button class="key" data-value="0">0</button>
+      <button class="key" data-value=".">.</button>
+      <button class="key" data-value="%" aria-label="Modulus">%</button>
+      <button class="key operator" data-action="equals" aria-label="Calculate result">=</button>
+    </section>
+
+    <footer class="calculator-footer">
+      <p>Keyboard shortcuts: 0-9, +, -, *, /, %, ., Enter, Backspace, Escape</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
